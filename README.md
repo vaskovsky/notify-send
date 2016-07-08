@@ -4,10 +4,16 @@ notify-send is a tool that displays pop-up desktop notifications.
 
 ## Building
 
-1. Run [Aut2Exe][1].
-2. Choose `notify-send.au3` as `Source (AutoIt *.au3)`.
-3. Choose `notify-send.ico` as `Custom Icon (*.ico file)`.
-4. Press `Convert`.
+1. Open `notify-send.sln` in **Visual Studio** or **MonoDevelop**.
+
+2. Select **Release** from the **Solution Configuration** drop-down list,
+   which is on the **Standard** toolbar
+   (ignore this step in **Visual Studio Express**).
+
+3. On the **Build** menu, click **Build**.
+
+You can find `notify-send.exe` in `bin/Release` folder
+(or in `bin/Debug` if you are using **Visual Studio Express**).
 
 ## Usage
 
@@ -49,4 +55,10 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU Lesser General Public License for more details.
 
-[1]: https://www.autoitscript.com/site/autoit/downloads/
+## See also
+
+[notify-send Documentation](http://vaskovsky.net/notify-send/)
+
+[Download Visual Studio Express](https://www.visualstudio.com/ru-ru/products/visual-studio-express-vs.aspx)
+
+[Download MonoDevelop](http://www.monodevelop.com/download/)
