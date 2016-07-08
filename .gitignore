@@ -1,2 +1,3 @@
+bin/
 Makefile
-notify-send.exe
+notify-send.userprefs
