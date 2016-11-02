@@ -1,0 +1,14 @@
+F:\notify-send\bin\Release\notify-send.exe
+F:\notify-send\bin\Release\notify-send.pdb
+F:\notify-send\obj\Release\Vaskovsky.Properties.Resources.resources
+F:\notify-send\obj\Release\notify-send.csproj.GenerateResource.Cache
+F:\notify-send\obj\Release\notify-send.exe
+F:\notify-send\obj\Release\notify-send.pdb
+F:\notify-send\obj\Release\notify-send.csprojResolveAssemblyReference.cache
+E:\notify-send\obj\Release\notify-send.exe
+E:\notify-send\obj\Release\notify-send.pdb
+E:\notify-send\bin\Release\notify-send.exe
+E:\notify-send\bin\Release\notify-send.pdb
+E:\notify-send\obj\Release\notify-send.csprojResolveAssemblyReference.cache
+E:\notify-send\obj\Release\Vaskovsky.Properties.Resources.resources
+E:\notify-send\obj\Release\notify-send.csproj.GenerateResource.Cache

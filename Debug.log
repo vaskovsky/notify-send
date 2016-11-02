@@ -1,0 +1,9 @@
+2016-11-02 01:47:41 NotifySend.Init
+	AppName: Notify-send
+	Title: Debug
+	Message: Debugging notify-send...
+	Icon: Warning
+	Timeout: 5000
+2016-11-02 01:47:41 NotifySend.Show
+2016-11-02 01:47:48 NotifySend.Hide
+2016-11-02 01:47:48 NotifySend.Exit

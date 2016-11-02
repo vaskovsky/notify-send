@@ -1,3 +1,4 @@
 bin/
 Makefile
 notify-send.userprefs
+.vs/
