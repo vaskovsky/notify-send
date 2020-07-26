@@ -29,7 +29,7 @@ namespace Vaskovsky
         private const string DefaultAppName = "notify-send for Windows";
         private const string DefaultTitle = DefaultAppName;
         private const string Usage = @"Usage:
-  notify-send [-i ICON] ""TITLE"" ""MESSAGE""
+  notify-send [-i info|important|error] ""TITLE"" ""MESSAGE""
 © 2016 Alexey Vaskovsky
 For more information visit http://vaskovsky.net/notify-send
 ";
