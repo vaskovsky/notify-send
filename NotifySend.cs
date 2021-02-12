@@ -1,19 +1,19 @@
-﻿/**
- * © 2016 Alexey Vaskovsky <alexey@vaskovsky.net>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+﻿﻿/**
+* © 2016 Alexey Vaskovsky <alexey@vaskovsky.net>
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Lesser General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+*  This program is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  You should have received a copy of the GNU Lesser General Public License
+*  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 using System;
 using System.Windows.Forms;
@@ -22,16 +22,18 @@ using System.Reflection;
 namespace Vaskovsky
 {
     /** NotifySend notify-send is a tool that displays pop-up desktop notifications. */
-    class NotifySend : ApplicationContext
+    public class NotifySend : ApplicationContext
     {
         private const string Version = "notify-send for Windows 2.1.0";
-		private const int DefaultTimeout = 5000;
+        private const int DefaultTimeout = 5000;
         private const string DefaultAppName = "notify-send for Windows";
         private const string DefaultTitle = DefaultAppName;
         private const string Usage = @"Usage:
-  notify-send [-i info|important|error] ""TITLE"" ""MESSAGE""
+notify-send [-i info|important|error] ""TITLE"" ""MESSAGE""
+
 © 2016 Alexey Vaskovsky
-For more information visit http://vaskovsky.net/notify-send
+For more information visit
+http://vaskovsky.net/notify-send
 ";
         private NotifyIcon Notification;
         private bool _ExitOnClose = false;
@@ -41,9 +43,9 @@ For more information visit http://vaskovsky.net/notify-send
         public bool Debug = false;
 
         /**
-		 * Specifies the timeout in milliseconds
-		 * at which to expire the notification.
-		 */
+         * Specifies the timeout in milliseconds
+         * at which to expire the notification.
+         */
         public int Timeout = DefaultTimeout;
 
         /** Specifies the message title. */
@@ -75,11 +77,11 @@ For more information visit http://vaskovsky.net/notify-send
         }
 
         /**
-		 * If this property is set to true,
-		 * it will exit thread when you close the notification.
-		 *
-		 * Default: false.
-		 */
+         * If this property is set to true,
+         * it will exit thread when you close the notification.
+         *
+         * Default: false.
+         */
         public bool ExitOnClose
         {
             get { return _ExitOnClose; }
@@ -236,12 +238,12 @@ For more information visit http://vaskovsky.net/notify-send
                             i++;
                             continue;
                         }
-						if (args[i] == "-v")
+                        if (args[i] == "-v")
                         {
                             Console.WriteLine(Version);
                             return;
                         }
-						if (args[i] == "-?")
+                        if (args[i] == "-?")
                         {
                             Console.WriteLine(Usage);
                             return;

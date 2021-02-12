@@ -1,5 +1,5 @@
 bin/
 obj/
-Makefile
-notify-send.userprefs
 .vs/
+Debug.log
+Makefile
