@@ -18,8 +18,6 @@
 
 The project has been rebuilt under .NET Framework 4.
 
-[Download](https://github.com/vaskovsky/notify-send/releases/download/v3.0.0/notify-send.exe.3.0.0.zip)
-
 [Source code](https://github.com/vaskovsky/notify-send/tree/v3.0.0)
 
 ## Version 2.1.0
