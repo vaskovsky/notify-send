@@ -1,6 +1,6 @@
 # notify-send for Windows
 
-notify-send is a tool that displays pop-up desktop notifications.
+notify-send is a program to send desktop notifications.
 
 ## Building
 
@@ -25,11 +25,12 @@ The possible values of `ICON` are: `info` | `important` | `error`.
 Default: `info`.
 
 `-a APPNAME`:
-specifies the application name for the icon.
+sets the ToolTip text displayed when the mouse pointer rests
+on a notification area icon.
 
 `-t TIMEOUT`:
 specifies the timeout in milliseconds at which to expire the notification.
-Default: 5000.
+Default: 10000.
 
 This parameter is deprecated as of Windows Vista.
 Notification display times are now based on system accessibility settings.
@@ -40,7 +41,7 @@ Notification display times are now based on system accessibility settings.
 
 `--debug`:	enables the debug mode.
 
-`-u LEVEL`, `-c TYPE`, `-h HINT` are ignored
+, `-u LEVEL`, `-c TYPE`, `-h HINT` are ignored
 (designed for compatibility with the Linux version).
 
 `--`:	end of options.

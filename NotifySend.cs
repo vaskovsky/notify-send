@@ -24,9 +24,9 @@ namespace Vaskovsky
     /** NotifySend notify-send is a tool that displays pop-up desktop notifications. */
     public class NotifySend : ApplicationContext
     {
-        private const string Version = "notify-send for Windows 2.1.0";
-        private const int DefaultTimeout = 5000;
-        private const string DefaultAppName = "notify-send for Windows";
+        private const string Version = "notify-send for Windows 3.0.1";
+        private const int DefaultTimeout = 10000;
+        private const string DefaultAppName = "notify-send";
         private const string DefaultTitle = DefaultAppName;
         private const string Usage = @"Usage:
 notify-send [-i info|important|error] ""TITLE"" ""MESSAGE""
@@ -118,19 +118,6 @@ http://vaskovsky.net/notify-send
             Notification.Click += new EventHandler(this.Hide);
         }
 
-        /** Creates new notification and sets ExitOnClose = true. */
-        [Obsolete("Use NotifySend() and properties.")]
-        public NotifySend(
-            string title, string message, ToolTipIcon icon, int timeout
-        ) : this()
-        {
-            Title = title;
-            Message = message;
-            Icon = icon;
-            Timeout = timeout;
-            ExitOnClose = true;
-        }
-
         /** Displays this notification. */
         public void Show()
         {
@@ -157,7 +144,7 @@ http://vaskovsky.net/notify-send
                 IsRunning = false;
                 if (Debug)
                     Console.WriteLine(Timestamp() + " NotifySend.Exit");
-                this.ExitThread();
+                Application.Exit();
             }
         }
 
@@ -283,7 +270,6 @@ http://vaskovsky.net/notify-send
                 if (notifySend.Debug)
                 {
                     Console.WriteLine(Timestamp() + " NotifySend.Init");
-                    Console.WriteLine("\tAppName: " + notifySend.AppName);
                     Console.WriteLine("\tTitle: " + notifySend.Title);
                     Console.WriteLine("\tMessage: " + notifySend.Message);
                     Console.WriteLine("\tIcon: " + notifySend.Icon);

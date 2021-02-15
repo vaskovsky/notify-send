@@ -1,4 +1,5 @@
 bin/
+notes/
 obj/
 .vs/
 Debug.log
