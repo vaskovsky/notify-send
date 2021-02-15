@@ -41,7 +41,7 @@ Notification display times are now based on system accessibility settings.
 
 `--debug`:	enables the debug mode.
 
-, `-u LEVEL`, `-c TYPE`, `-h HINT` are ignored
+`-u LEVEL`, `-c TYPE`, `-h HINT` are ignored
 (designed for compatibility with the Linux version).
 
 `--`:	end of options.
