@@ -13,48 +13,13 @@ notify-send is a program to send desktop notifications.
 
 You can find `notify-send.exe` in `bin/Release` folder.
 
-## Usage
+## Documentation
 
-	notify-send [OPTIONS] "TITLE" ["MESSAGE"]
+[Usage](http://vaskovsky.net/notify-send.html)
 
-### Options:
+[Troubleshooting](http://vaskovsky.net/notify-send-troubleshooting.html)
 
-`-i ICON`:
-specifies an icon to display.
-The possible values of `ICON` are: `info` | `important` | `error`.
-Default: `info`.
-
-`-a APPNAME`:
-sets the ToolTip text displayed when the mouse pointer rests
-on a notification area icon.
-
-`-t TIMEOUT`:
-specifies the timeout in milliseconds at which to expire the notification.
-Default: 10000.
-
-This parameter is deprecated as of Windows Vista.
-Notification display times are now based on system accessibility settings.
-
-`-v`:	show version and exit.
-
-`-?`:	show help options and exit.
-
-`--debug`:	enables the debug mode.
-
-`-u LEVEL`, `-c TYPE`, `-h HINT` are ignored
-(designed for compatibility with the Linux version).
-
-`--`:	end of options.
-
-### Examples:
-
-	notify-send "My Message"
-
-	notify-send "Title" "Message"
-
-	notify-send -i error "Error" "File not found"
-
-	notify-send -i important "Attention!" "You should upgrade some software"
+[Changelog](http://vaskovsky.net/notify-send-changelog.html)
 
 ## License
 
