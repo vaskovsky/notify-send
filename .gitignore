@@ -1,6 +1,5 @@
-bin/
-notes/
-obj/
-.vs/
-Debug.log
 Makefile
+notes/
+notify-send.exe
+Debug.log
+

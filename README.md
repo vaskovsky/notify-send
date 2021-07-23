@@ -4,14 +4,10 @@ notify-send is a program to send desktop notifications.
 
 ## Building
 
-1. Open `notify-send.sln` in **Visual Studio** or **MonoDevelop**.
-
-2. Select **Release** from the **Solution Configuration** drop-down list,
-   which is on the **Standard** toolbar.
-
-3. On the **Build** menu, click **Build**.
-
-You can find `notify-send.exe` in `bin/Release` folder.
+To compile execute:
+```
+csc -o+ -sdk:4 -r:System.Windows.Forms -r:System.Drawing -win32icon:notify-send.ico -out:notify-send.exe NotifySend.cs
+```
 
 ## Documentation
 
