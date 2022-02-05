@@ -6,7 +6,11 @@ notify-send is a program to send desktop notifications.
 
 To compile execute:
 ```
-csc -o+ -sdk:4 -r:System.Windows.Forms -r:System.Drawing -win32icon:notify-send.ico -out:notify-send.exe NotifySend.cs
+csc -o+ -sdk:4 -r:System.Windows.Forms -r:System.Drawing -win32icon:notify-send.ico -out:notify-send.exe NotifySendCLI.cs
+```
+For newer versions of the compiler, the command is simpler:
+```
+csc -o+ -win32icon:notify-send.ico -out:notify-send.exe NotifySendCLI.cs
 ```
 
 ## Documentation
